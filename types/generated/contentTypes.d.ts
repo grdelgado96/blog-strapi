@@ -858,6 +858,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
     >;
     slug: Attribute.UID<'api::blog.blog', 'title'>;
     content: Attribute.RichText;
+    contentBlock: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
